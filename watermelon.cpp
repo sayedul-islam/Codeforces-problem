@@ -4,18 +4,16 @@
 using namespace std;
 int main(){
     fast;
-    int w,i,num,count=0;
-    cin>>w;
-
-    for(i=2; i<w; i+=2){
-        w=w-i;
-        if(w%2==0){
-            count=1;
-            break;
+    int n,len;
+    string s;
+    cin>>n;
+    while(n--){
+        cin>>s;
+        len=s.size();
+        if(len>10){
+            cout<<s[0]<<len-2<<s[len-1]<<endl;
         }
+        else cout<<s<<endl;
     }
-    if(count) cout<<"YES"<<endl;
-    else cout<<"NO"<<endl;
     return 0;
 }
-
